@@ -18,7 +18,7 @@ def to_title_case(text):
 
 def safe_filename(name):
     # Remove any characters that aren't letters, numbers, underscores, or hyphens
-    return re.sub(r'[^a-zA-Z0-9_\-\.]', '', name.replace(' ', '_'))
+    return re.sub(r'[^\w\-\.]', '', name.replace(' ', '_'))
 
 def generate_pptx(args_tuple):
     """
